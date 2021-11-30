@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <style>
+        h1 {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="dom"></div>
+    <script type="text/babel">
+        // 创建虚拟DOM
+        const VDOM = (
+            <h1 className="h1">hello world</h1>
+        )
+        // 渲染到页面
+        ReactDOM.render(VDOM, document.getElementById('dom'))
+    </script>
+</body>
+
+</html>
